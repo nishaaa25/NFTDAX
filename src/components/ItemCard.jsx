@@ -2,9 +2,9 @@ import React from "react";
 
 const ItemCard = ({ imgUrl, logo, clubName, name, icon }) => {
   return (
-    <div className="rounded-xl bg-gradient-to-r from-cyan-300 via-purple-300 to-fuchsia-900 p-0.5 max-w-[300px] cursor-pointer">
-      <div className="flex flex-col rounded-xl h-full w-full items-center justify-center bg-zinc-900 back p-3">
-        <img src={imgUrl} width={280} className="rounded-md"/>
+    <div className="rounded-xl bg-gradient-to-r w-[300px] group from-cyan-300 via-purple-300 to-fuchsia-900 p-0.5 cursor-pointer relative">
+      <div className="flex flex-col rounded-xl h-full w-full items-center justify-center bg-zinc-900 back p-3 group-hover:p-6">
+        <img src={imgUrl} className="rounded-md w-[100%]"/>
         <div className="flex justify-between gap-3 items-start mt-5 mb-5">
           <img src={logo} width={60} className="rounded-md"/>
           <div className="flex flex-col mr-5">
